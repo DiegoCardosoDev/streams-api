@@ -35,6 +35,7 @@ public class ApiApplication  implements CommandLineRunner {
 			SeasonData seasonData = conversor.getData(json, SeasonData.class);
 			seasonDataList.add(seasonData);
 		}
+
 		seasonDataList.forEach(System.out::println);
 	}
 
